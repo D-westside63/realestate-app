@@ -1,0 +1,15 @@
+# 依存関係
+node_modules
+
+# ビルド成果物
+dist
+
+# 環境変数（Supabaseの鍵情報を含むため必ず除外する）
+.env
+.env.local
+.env.*.local
+
+# エディタ・OS
+.DS_Store
+.vscode
+.idea

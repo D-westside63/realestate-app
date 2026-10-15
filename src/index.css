@@ -1,0 +1,229 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Yu Gothic', sans-serif;
+  background-color: #f5f6f8;
+  color: #1f2933;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* ログイン・会員登録画面 */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.auth-form {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form h1 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.auth-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.auth-form input {
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.auth-form button {
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+.info-message {
+  color: #15803d;
+  font-size: 13px;
+  margin: -8px 0 16px;
+}
+
+/* 物件一覧画面 */
+.property-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+.property-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.property-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user-email {
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.property-header button {
+  padding: 8px 16px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.property-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.property-card h2 {
+  margin: 0 0 12px;
+  font-size: 17px;
+}
+
+.property-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.property-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.property-card-actions button {
+  padding: 6px 12px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.property-add-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 物件の新規登録・編集フォーム */
+.property-form {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.property-form label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.property-form input {
+  margin-bottom: 16px;
+  padding: 10px 12px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.property-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.property-form-actions button[type='submit'] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.property-form-actions button[type='submit']:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.property-form-actions button[type='button'] {
+  padding: 10px 16px;
+  border: 1px solid #cbd2d9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
